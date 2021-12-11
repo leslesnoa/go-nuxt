@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+
+  app:
+    build: .
+    volumes:
+      - ./:/go/src/whoisapp
+    ports:
+      - "8080:8080"
